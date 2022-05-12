@@ -1,0 +1,371 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+.container{
+    max-width: 1120px;
+    margin: auto;
+}
+img{
+    max-width: 100%;
+}
+header{}
+
+nav{
+    background-color: #222;
+    padding: 20px 0;
+}
+nav .container{
+    display: flex;
+    justify-content: space-between;
+   
+
+}
+
+nav .container .logo a{
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+
+}
+
+nav .container .logo i{
+    color: aqua;
+    margin-right: 5px;
+}
+
+nav .container .nav-right{
+display: flex;
+padding: 10px 0;
+}
+nav .container .nav-right .menu{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-right: 5px;
+
+}
+nav .container .nav-right .menu li{
+    list-style: none;
+}
+nav .container .nav-right .menu li a{
+ font-size: 20px;
+ font-weight: bold;
+ text-decoration: none;
+ color: #fff;
+ padding: 20px 10px ;
+ transition: 00.5s;
+ position: relative;
+}
+nav .container .nav-right .menu li a::before{
+     content: "";
+     width: 0;
+     height: 3px;
+     color: #fff;
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     transition: 0.4s;
+     visibility: hidden;
+     cursor: pointer;
+}
+nav .container .nav-right .menu li a:hover{
+color: gold;
+}
+nav .container .nav-right .menu li a:hover::before{
+      background-color: gold;
+      width: 100%;
+      opacity: 1;
+      visibility: visible;
+}
+nav .container .nav-right .nav-btn{} .btn{
+    background: linear-gradient(to left,#1ec5fa, #0d47d5 , #1ec5fa);
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 10px;
+    transition: 0.4s;
+    background-size: 200%;
+    margin-left: 10px;
+    display: inline;
+    overflow: hidden;
+}
+.btn:hover{
+    background-position: right;
+}
+
+.banner {
+    margin-top: 25px;
+}
+.banner .container{
+    background-image: linear-gradient( rgba( 0,0,0,0.6 ), rgba(0,0,0,0.6) ), url(banner-bg.jpg); 
+    height: 85vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+}
+.banner .container .content{
+   width: 600px;
+   text-align: center;
+}
+.banner .container .content h1{
+  color: aliceblue;
+  font-size: 45px;
+  text-shadow: 3px 3px 15px #aaa;
+
+}
+.banner .container .content p{
+   
+    color: bisque;
+    font-size: 20px;
+    margin: 20px 0;
+}
+.service{
+ padding: 20px 0;
+}
+.service .title-box{
+    font-size: 20px;
+    text-align: center;
+    
+}
+.service .box-container{
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+ gap: 20px;
+ text-align: center;
+}
+.box-container .box{
+    flex-basis: 31%;
+    gap: 20px;
+    padding: 30px;
+    border: 3px solid transparent;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.box:hover{
+    border: 3px solid turquoise;
+}
+.box i{
+    font-size: 40px;
+    color: turquoise;
+}
+.box-container .box h3{
+    font-size: 25px;
+    margin-bottom: 20px 0;
+    color: rgb(6, 26, 26);
+   }
+   
+.box-container .box p{
+    color: #777;
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.destination{
+    padding: 60px;
+}
+.box-destination{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  
+}
+.d-box{
+flex-basis: 31%;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+border-radius: 15px;
+overflow: hidden;
+cursor: pointer;
+}
+.d-box:hover .image img {
+    transform: scale(1.1);
+}
+.d-box .image {
+    height: 220px;
+    overflow: hidden;
+}
+
+.d-box .image img{
+    transition: 0.4s;
+}
+
+.d-box-content{
+text-align: center;
+padding: 25px 30px;
+}
+.d-box-content h3{
+    font-size: 25px;
+     font-weight: 600;
+}
+.d-box-content p{
+    color: thistle;
+    font-size: 18px;
+    margin: 20px;
+}
+.d-box .d-box-content button {
+   color: yellowgreen;
+   font-size: 20px;
+   border: none;
+   background: none;
+}
+.d-box .d-box-content button i{
+transition: 0.4s;
+}
+.d-box .d-box-content button:hover i{
+margin-left: 10px;
+} 
+.testimonial{
+    padding: 80px 0;
+}
+.father{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.father-left{
+    flex-basis: 50%;
+}
+.father-left span{
+    color: #777;
+    margin-bottom: 10px;
+}
+.father-left h2{
+ font-size: 30px;
+ color:#222;
+ font-weight: 600;
+margin-bottom: 10px;
+}
+.father-left p{
+font-size: 18px;
+color: #aaa;
+}
+.father-right{
+    display: flex;
+    flex-basis: 50%;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.father-right-box{
+ flex-basis: 48%;
+ box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+ border-radius: 15px;
+ padding: 20px;
+ transition: 0.4s;
+ 
+}
+.father-right-box:hover{
+    transform: translateY(-7px) ;
+}
+.client{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.father-right-box >p{
+    color: #aaa;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.client .client-image{
+    border-radius: 50%;
+    overflow: hidden;
+    height: 50px;
+    width: 50px;
+    
+}
+.client-info{
+    margin-left: 20px;
+}
+.client-info h5{
+    font-size: 16px;
+}
+.client-info p{
+    font-size: 14px;
+    color: #aaa;
+}
+
+.footer{
+background-color: #222;
+padding: 50px 0;
+}
+.footer-container{
+display: flex ;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+.footer-col{
+    flex-basis: 25%;
+    max-width: 25%;
+    
+}
+.footer-col h4{
+    font-size: 25px;
+    color: aliceblue;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.footer-col ul li{
+ list-style: none;
+ 
+}
+.footer-col ul li a {
+ text-decoration: none;
+ color: bisque;
+ font-size: 18px;
+ text-transform: capitalize;
+ transition: 0.4s;
+ position: relative;
+ padding: 20px 0;
+ line-height: 40px;
+ 
+}
+.footer-col ul li a i{
+   color: peru;
+   margin-right: 10px;
+   
+}
+.footer-col ul li a:hover {
+  color: goldenrod;
+  padding-left: 5px;
+}
+.footer-col .social-list a{
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 10px 10px 0;
+    transform: 0.4s;
+    
+    
+}
+.footer-col .social-list a i{
+    font-size: 40px;
+    border-radius: 50%;
+    
+    
+    color: #fff;
+    
+}
+
+.footer-col .social-list a i:hover{
+    transform: translateY(-7px) ;
+    
+}
